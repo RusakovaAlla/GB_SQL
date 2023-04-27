@@ -85,4 +85,4 @@ VALUES
     FROM analysis
     WHERE an_id IN (SELECT distinct(ord_an) 
 					FROM orders 
-                    WHERE date(ord_datetime) BETWEEN '2020-02-05' and DATE_ADD(date(ord_datetime), INTERVAL 6 DAY));
+                    WHERE date(ord_datetime) BETWEEN '2020-02-05' AND DATE_ADD(date(ord_datetime), INTERVAL 6 DAY));
